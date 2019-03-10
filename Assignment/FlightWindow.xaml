@@ -12,12 +12,55 @@
             <ColumnDefinition Width="91*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="takeoffBtn" Content="Takeoff" Margin="10,0,0,10" FontSize="20" FontFamily="MV Boli" Height="38" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="101" Click="TakeoffBtn_Click"/>
-        <Button x:Name="landingbtn" Content="Landing" Margin="0,0,10,10" FontSize="20" FontFamily="MV Boli" HorizontalAlignment="Right" Width="101" Height="38" VerticalAlignment="Bottom" Grid.Column="1" Click="Landingbtn_Click"/>
-        <ComboBox x:Name="actionComboBox" Margin="116,0,116,10" FontFamily="MV Boli" FontSize="20" Grid.ColumnSpan="2" Height="38" VerticalAlignment="Bottom" SelectionChanged="FlightAction_SelectionChanged" SelectedValuePath="Content">
+        <Button x:Name="landingbtn" Content="Landing" Margin="0,0,10,10" FontSize="20" FontFamily="MV Boli" HorizontalAlignment="Right" Width="101" Height="38" VerticalAlignment="Bottom" Grid.Column="1" Click="Landingbtn_Click" IsEnabled="False"/>
+        <ComboBox x:Name="actionComboBox" Margin="116,0,116,10" FontFamily="MV Boli" FontSize="20" Grid.ColumnSpan="2" Height="38" VerticalAlignment="Bottom" SelectionChanged="FlightAction_SelectionChanged" SelectedValuePath="Content" IsEnabled="False">
             <ComboBoxItem Content="0 deg"/>
             <ComboBoxItem Content="10 deg"/>
+            <ComboBoxItem Content="20 deg"/>
+            <ComboBoxItem Content="30 deg"/>
+            <ComboBoxItem Content="40 deg"/>
+            <ComboBoxItem Content="50 deg"/>
+            <ComboBoxItem Content="60 deg"/>
+            <ComboBoxItem Content="70 deg"/>
+            <ComboBoxItem Content="80 deg"/>
+            <ComboBoxItem Content="90 deg"/>
+            <ComboBoxItem Content="100 deg"/>
+            <ComboBoxItem Content="110 deg"/>
+            <ComboBoxItem Content="120 deg"/>
+            <ComboBoxItem Content="130 deg"/>
+            <ComboBoxItem Content="140 deg"/>
+            <ComboBoxItem Content="150 deg"/>
+            <ComboBoxItem Content="160 deg"/>
+            <ComboBoxItem Content="170 deg"/>
+            <ComboBoxItem Content="180 deg"/>
+            <ComboBoxItem Content="190 deg"/>
+            <ComboBoxItem Content="200 deg"/>
+            <ComboBoxItem Content="210 deg"/>
+            <ComboBoxItem Content="220 deg"/>
+            <ComboBoxItem Content="230 deg"/>
+            <ComboBoxItem Content="240 deg"/>
+            <ComboBoxItem Content="250 deg"/>
+            <ComboBoxItem Content="260 deg"/>
+            <ComboBoxItem Content="270 deg"/>
+            <ComboBoxItem Content="280 deg"/>
+            <ComboBoxItem Content="290 deg"/>
+            <ComboBoxItem Content="300 deg"/>
+            <ComboBoxItem Content="310 deg"/>
+            <ComboBoxItem Content="320 deg"/>
+            <ComboBoxItem Content="330 deg"/>
+            <ComboBoxItem Content="340 deg"/>
+            <ComboBoxItem Content="350 deg"/>
         </ComboBox>
-        <Image x:Name="logoImage" HorizontalAlignment="Center" Height="189" Margin="10,-9,10,83" VerticalAlignment="Center" Width="529" Grid.ColumnSpan="2"/>
+        <Image x:Name="logoImage" Margin="10,10,10,64" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>

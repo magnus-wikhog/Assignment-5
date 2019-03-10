@@ -58,6 +58,10 @@ namespace Assignment {
         /// </summary>
         private void TakeoffBtn_Click(object sender, RoutedEventArgs e) {
             flightEventDel(new Events.FlightEventArgs(flightNr, "Takeoff"));
+
+            takeoffBtn.IsEnabled = false;
+            landingbtn.IsEnabled = true;
+            actionComboBox.IsEnabled = true;
         }
 
         /// <summary>
@@ -65,6 +69,7 @@ namespace Assignment {
         /// </summary>
         private void Landingbtn_Click(object sender, RoutedEventArgs e) {
             flightEventDel(new Events.FlightEventArgs(flightNr, "Landing"));
+            Close();
         }
 
         /// <summary>
