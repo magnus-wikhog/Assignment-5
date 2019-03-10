@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assignment"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Control Tower" Height="491.183" Width="705.462">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="727*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="flightList" Margin="10,10,10,111" Grid.ColumnSpan="2" SelectionMode="Single">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding FlightNr}" Header="Flight" Width="120"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Action}" Header="Action" Width="400"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Time}" Header="Time" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Next flight" HorizontalAlignment="Left" Margin="23,0,0,13" FontSize="20" FontFamily="MV Boli" Height="42" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="flightNrEdit" Margin="147,0,331.092,20" TextWrapping="Wrap" Text="dd123" FontSize="20" FontFamily="MV Boli" Height="31" VerticalAlignment="Bottom"/>
+        <Button Content="Send next airplane to runway" Margin="0,0,20,17" FontSize="20" FontFamily="MV Boli" Height="38" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="332" Grid.ColumnSpan="2" Click="Button_Click"/>
+        <Label x:Name="flightCounterLabel" Content="0" HorizontalAlignment="Left" Margin="273,0,0,64" FontSize="20" FontFamily="MV Boli" Height="42" VerticalAlignment="Bottom"/>
+        <Label Content="Number of flights in air:" HorizontalAlignment="Left" Margin="23,0,0,64" FontSize="20" FontFamily="MV Boli" Height="42" VerticalAlignment="Bottom"/>
+
     </Grid>
 </Window>

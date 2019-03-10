@@ -1,4 +1,9 @@
-﻿using System.Reflection;
+﻿///<summary>
+/// Namn:       Magnus Wikhög
+/// Projekt:    Assignment 5
+/// Inlämnad:   2019-03-10
+///</summary>
+using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
