@@ -51,8 +51,10 @@ namespace Assignment {
         /// Öppnar ett nytt fönster med en ny flight.
         /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e) {
-            if (flightNrEdit.Text.Length == 0)
+            if (flightNrEdit.Text.Length < 2) {
+                MessageBox.Show("Ett flightnummer måste bestå av minst två tecken.");
                 return;
+            }
 
             // Dessa delegates kommer att anropas av flight - fönstret när användaren klickar
             // på Takeoff eller Landing, eller väljer en ny kurs i dropdownlistan.
